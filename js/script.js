@@ -1,3 +1,19 @@
+$( document ).ready(function(){
+
+    $("#barras").click(function() {
+        // $("#nav_items").addClass("nav_items_ativo")
+
+        if($("#nav_items").hasClass("nav_items_ativo")) {
+            $("#nav_items").removeClass("nav_items_ativo")
+        } else {
+            $("#nav_items").addClass("nav_items_ativo")
+        }
+
+    })
+})
+
+
+
 function renderizarDestaques () {
     let destaque = document.getElementById("destaques_items");
     let listaItems = [
@@ -46,4 +62,62 @@ function renderizarDestaques () {
     
    console.log(destaque.innerHTML)
     destaque.innerHTML = template;
+}
+
+
+function renderizarVagas () {
+    let vaga = document.getElementById("vagas_items");
+    let listaVagas = [
+
+    {
+        areaVaga: "TI",
+        nomeVaga: "Analista de Desenvolvimento de Sistemas - FullStack",
+        exigenciaVaga: "PHP, Mysql, NodeJS, ReactJS, Python, HTML5, CSS, GIT, SCRUM",
+        salarioVaga: "R$1.210,00",
+       },
+    {
+        areaVaga: "SAC",
+        nomeVaga: "DJ de musica de espera do teleatendimnto",
+        exigenciaVaga: "Dominio de ao menos 3 instrumentos musicais", 
+        salarioVaga: "R$ 70,00/h",
+    },
+    
+    {
+        areaVaga: "Logística",
+        nomeVaga: "Auxiliar de carragamento de veículos logísticos",
+        exigenciaVaga: "Ombros largos",
+        salarioVaga: "R$ 3.000,00",
+    },
+    
+    
+]
+
+
+    let template = "";
+
+    for (let index = 0; index <listaVagas.length; index++) {
+        const vaga = listaVagas[index];
+
+        console.log("Vaga")
+
+        template += `<div class="card_vaga">
+        <h1>${vaga.areaVaga}</h1>
+        <h2>${vaga.nomeVaga}</h2>
+        <h3>Exigências para cargo:<h3>
+        <h2>${vaga.exigenciaVaga}</h2>
+        <h4>${vaga.salarioVaga}</h4>
+    </div>`
+
+   }
+    
+   console.log(vaga.innerHTML)
+    vaga.innerHTML = template;
+}
+
+
+function GetValue()
+{
+    var myarray= new Array("6 Esferas do dragão","Uma Lágrima do Chuck Norris","Pastilha de freio de um Peugeot","Um capacitor de fluxo", "Uma flor", "Uma Página completa com js CSS e HTML","Uma Revista Super Gamer Power com detonado de Resident Evil 2", "Os últimos livros de Game of Thrones", "Carta Lótus Negra de Magic the Gathering",);
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("message").innerHTML=random;
 }

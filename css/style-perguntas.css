@@ -1,0 +1,534 @@
+* {    
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 108px;
+}
+
+.container_grid{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.posicionamento_header{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barras_header{
+    display:none;
+    width: 15%;
+    padding-right: 15px;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.icones_header{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container {
+    width: 300px; 
+    height: 42px;
+    position: relative;
+}
+    
+header #busca {
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 0px 15px 15px 0px;
+}
+
+header input,  #botao_busca {padding: 10px;}
+#botao_busca {
+    position: absolute;
+    border:none;
+    height: 100%;   
+    top: 0; 
+    left: 0;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.busca_nav {
+    display:none;
+
+}
+
+nav .container {
+    width: 75%; 
+    height: 45px;
+    position: absolute;
+}
+
+nav #busca_nav {
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 0px 15px 15px 0px;
+    }
+
+nav input,  #botao_busca_nav {padding: 10px;}
+#botao_busca_nav {
+    position: absolute;
+    border:none;
+    height: 100%;   
+    top: 0; 
+    left: 0;
+    border-radius: 15px 0px 0px 15px;
+}
+ 
+header #botao_login{
+    background-color: #199ec8;
+    border-style: none;
+    width: 115px;
+    height: 33px;
+    border-radius: 15px;
+}
+
+nav {
+    margin-bottom: 45px;
+    height: 65px;
+    padding: 10px;
+    width: 100%;
+    background:#199ec8;
+    border-radius: 0px 0px 0px 50px;
+}
+
+.nav {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.posicionamento_nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_items{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 30px;
+}
+
+.pop_up {
+    display: none;
+}
+
+.pop_up .hr1 {
+    display: none;
+}
+
+.perguntas {
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    background-image: linear-gradient(to bottom, rgba(240,251,255,0), rgba(240,251,255,1), rgba(240,251,255,0)) ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.cabecalho_perguntas {
+    background-image: url(../img/quebra_sessao.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 100%;
+    margin: 0, auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho_perguntas #header_perguntas{
+    color: blanchedalmond;
+    width:75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+
+}
+
+.perguntas_body{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.plat {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    align-self: flex-end;
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 0px 90px 0px 0px;
+}
+
+.logo_footer img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.corpo_footer{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.corpo_footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1680A1;
+    
+}
+
+.corpo_footer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 20px;
+}
+
+.corpo_footer a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.sobre_footer {
+    height: 100%;
+    width: 22%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;  
+    align-content: space-around; 
+}
+
+.contatos_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contatos_footer img {
+    width: 17px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.institucional_footer{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 25px;
+}
+
+.pagamento_footer{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 15px;
+}
+
+.pagamento_icons{
+    flex-wrap: wrap;
+}
+
+.pagamento_icons img{
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.footer hr {
+    border: 0;
+    height: 3px;
+    background: white ;    
+    margin-bottom: 0px;  
+}
+
+.sign_footer {
+    background-color: #199ec8 ;
+    height: 66px;
+    width: 100%;
+}
+
+.corpo_sign_footer {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.sign_footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    align-self: center;
+}
+
+.sign {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.midias_footer{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* 768 cel 1200 tablet */
+@media (max-width: 1200px)  {
+    .barras_header{
+        display:inline-block;
+    }
+    
+    .login_header, .busca_header  {
+        display: none;
+    }
+    
+    .departamentos_items {
+        display:none;
+    }
+    
+    .busca_nav {
+        display: inline-block;
+        z-index: 4;
+    }
+    
+    .banner_container {
+        height: 100%;
+        width: 45%;
+    }
+    
+    .banner_carousel {
+        width: 90%;
+    }
+    
+    .nav_items .vl {
+        display:none;
+    }
+    
+    .nav_items {
+        display: none;
+        padding: 20px;
+        flex-direction: column;
+        border-radius: 5px 5px 40px 5px;
+        border-right: 6px outset #199ec8;
+        z-index: 5;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(217, 232, 255, 0.95);
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+    
+    .nav_items_ativo{
+        display: flex;
+    }
+
+    .pop_up {
+        width: 100%;
+        display: flex;
+        align-content:inherit;
+        flex-direction: inherit;
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .container_grid{
+        width: 90%;
+        
+    }
+
+    .pop_up .hr1 {
+        display: flex;
+        width: 100%;
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, transparent, #CCC, transparent); 
+    }
+
+      .gps_loc{
+        display:none;
+    }
+
+    .sobre_footer{
+        width: 30%;
+        margin-left: 0px;
+    }
+
+    .institucional_footer{
+        width: 30%;
+    }
+
+    .pagamento_footer{
+        width: 30%;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        
+    header {
+        background-color: black;
+        width: 100%;
+        height: 58px;
+        }
+
+    header img {
+        height: 28px;
+        width: auto;
+        }
+
+    .barras_header{
+        width: 15%;
+        padding-right: 15px;}
+
+    .fa-bars {
+        display: none;
+        font-size: 15px;
+        color: white;
+        }
+
+    .icones_header{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        }
+
+    .icones_header img{
+        height: 12px;
+        width: auto;
+
+        }
+
+        nav {
+            margin-bottom: 25px;}
+
+    nav .container {
+        width: 85%; 
+        height: 45px;
+        position: relative;
+        }
+
+
+
+    .cabecalho_perguntas {
+        background-image: url(../img/quebra_sessao.png);
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        margin: 0, auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+  
+    
+        .corpo_footer{
+            flex-wrap: wrap;
+            justify-items: left;
+        }
+
+        .sobre_footer{
+            width: 100%;
+            margin-left: 0px;
+        }
+    
+        .institucional_footer{
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 25px;
+        }
+        
+        .pagamento_footer{
+            width: 100%;
+            margin-top: 25px;
+            margin-left: 0px;
+        }
+
+        .corpo_footer h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #1680A1;
+        
+        }
+        
+        .corpo_footer h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            color: white;
+            line-height: 20px;
+        }
+        
+        .corpo_footer a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            color: white;
+            text-decoration: none;
+            line-height: 30px;
+
+        
+        }
+    }
+}

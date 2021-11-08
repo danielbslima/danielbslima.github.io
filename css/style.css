@@ -102,6 +102,7 @@ header #botao_login{
 }
 
 nav {
+    margin-bottom: 45px;
     height: 65px;
     padding: 10px;
     width: 100%;
@@ -130,6 +131,8 @@ nav {
     align-items: center;
 }
 
+
+
 .nav a{
     color: black;
     text-decoration: none;
@@ -150,7 +153,7 @@ nav {
     display: none;
 }
 
-.banner {
+/* .banner {
     background-color: #F0FBFF;
     width: 100%;
     height: 484px;
@@ -188,6 +191,21 @@ nav {
     align-items: center;
     justify-content: center;
     
+} */
+
+.carousel-inner{
+    background-color: black;
+}
+
+.carousel-item img{
+    opacity: 0.7;
+}
+
+.caption_container{
+    width: 100%;
+    height: 33%;
+    background-position: end;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,1));
 }
 
 .conteudo_banner h1{
@@ -197,18 +215,39 @@ nav {
     text-align: center;
 }
 
-.conteudo_banner #button_carousel{
-    margin-top: 20px;
+
+
+.carousel-item h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.button_carousel{
+    margin-top: 10px;
+    margin-bottom: 20px;
     height: 42px;
     width: 140px;
     border-radius: 15px;
-    background-color: #F0FBFF;
+    background-color: #199ec8;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    border: 3px;
+    color: white;
     border-style: none;
 }
 
+.button_carousel:hover {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #199ec8;
+}
+
 .destaque {
+    margin-top: 45px;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -225,7 +264,7 @@ nav {
     display:flex;
     align-items: center;
     justify-content: center;
-    }
+}
 
 .cabecalho_destaques #header_destaques{
     color: blanchedalmond;
@@ -233,7 +272,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-
+    
 }
 
 
@@ -242,7 +281,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5px;  
-
+    
 }
 
 .card_destaque {
@@ -320,7 +359,7 @@ nav {
     display: flex;
     flex-direction: row;
     width: 75%;
-
+    
 }
 
 .card_jogos {
@@ -370,11 +409,14 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin: 10px 10px 40px 10px;
-
+    
 }
 
-.card_jogos button{
+.card_jogos a{
     background-color: #199ec8;
+    text-decoration: none;
+    color: white;
+    text-align: center;
     border-style: none;
     align-self: flex-end;
     margin: 15px;
@@ -433,7 +475,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-
+    
 }
 
 .gamer_corpo {
@@ -442,7 +484,7 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     width: 75%;
-
+    
 }
 
 .card_gamer {
@@ -517,7 +559,7 @@ nav {
     font-size: 14px;
     font-weight: bold;
     color: #1680A1;
-
+    
 }
 
 .corpo_footer h2 {
@@ -633,7 +675,7 @@ nav {
     .barras_header{
         display:inline-block;
     }
-
+    
     .login_header, .busca_header  {
         display: none;
     }
@@ -651,7 +693,7 @@ nav {
         height: 100%;
         width: 45%;
     }
-
+    
     .banner_carousel {
         width: 90%;
     }
@@ -674,7 +716,10 @@ nav {
         top: 0;
         text-align: center;
     }
-
+    
+    .nav_items_ativo{
+        display: flex;
+    }
     .pop_up {
         width: 100%;
         display: flex;
@@ -796,6 +841,9 @@ nav {
 
         }
 
+        nav {
+            margin-bottom: 25px;}
+
     nav .container {
         width: 85%; 
         height: 45px;
@@ -842,16 +890,39 @@ nav {
         text-align: center;
         }
 
-    .conteudo_banner #button_carousel{
-        margin-top: 0px;
-        height: 30px;
-        width: 90px;
-        border-radius: 10px;
-        background-color: #F0FBFF;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        border-style: none;
+
+    .carousel-caption{
+        bottom: 0.15rem        ;
+    }
+            
+        .capt_carousel h5{
+            margin-bottom: 0px;
+            margin-top:10px;
+            font-size: 14px;
         }
+
+        .carousel-indicators{
+            display: none;
+        }
+
+        .button_carousel{
+
+            margin-bottom: 10px;
+            height: 30px;
+            width: 110px;
+            border-radius: 10px;
+            background-color: #199ec8;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            border: 3px;
+            color: white;
+            border-style: none;
+        }
+
+
+    .destaque {
+        margin-top: 25px;}
+
 
     .cabecalho_destaques {
         background-image: url(../img/quebra_sessao.png);
@@ -986,6 +1057,11 @@ nav {
             color: white;
             text-decoration: none;
             line-height: 30px;
+
+        
         }
+    
+
+
     }
 }
