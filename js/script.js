@@ -77,7 +77,7 @@ function renderizarVagas () {
        },
     {
         areaVaga: "SAC",
-        nomeVaga: "DJ de musica de espera do teleatendimnto",
+        nomeVaga: "DJ de musica de espera do teleatendimento",
         exigenciaVaga: "Dominio de ao menos 3 instrumentos musicais", 
         salarioVaga: "R$ 70,00/h",
     },
@@ -104,7 +104,7 @@ function renderizarVagas () {
         <h1>${vaga.areaVaga}</h1>
         <h2>${vaga.nomeVaga}</h2>
         <h3>Exigências para cargo:<h3>
-        <h2>${vaga.exigenciaVaga}</h2>
+        <h3>${vaga.exigenciaVaga}</h2>
         <h4>${vaga.salarioVaga}</h4>
     </div>`
 
@@ -120,4 +120,15 @@ function GetValue()
     var myarray= new Array("6 Esferas do dragão","Uma Lágrima do Chuck Norris","Pastilha de freio de um Peugeot","Um capacitor de fluxo", "Uma flor", "Uma Página completa com js CSS e HTML","Uma Revista Super Gamer Power com detonado de Resident Evil 2", "Os últimos livros de Game of Thrones", "Carta Lótus Negra de Magic the Gathering",);
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("message").innerHTML=random;
+}
+
+
+var toastTrigger = document.getElementById('btn-enviar')
+var toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
 }

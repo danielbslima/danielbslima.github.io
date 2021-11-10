@@ -272,7 +272,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-    
+    vertical-align: middle;
 }
 
 
@@ -351,8 +351,10 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-
+    vertical-align: middle;
 }
+
+
 
 .jogos_corpo {
     margin-top: 30px;
@@ -475,8 +477,10 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-    
+    vertical-align: middle;
 }
+
+
 
 .gamer_corpo {
     margin-top: 30px;
@@ -1059,6 +1063,21 @@ nav {
             line-height: 30px;
 
         
+        }
+
+        .cabecalho_destaques h1 {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .cabecalho_jogos h1 {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .cabecalho_gamechangers h1 {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
         }
     
 

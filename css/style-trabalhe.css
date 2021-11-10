@@ -179,7 +179,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-
+    vertical-align: middle;
 }
 
 .trabalhe_body{
@@ -209,6 +209,7 @@ nav {
     font-size: 14px;
     position: relative;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .vagas_corpo h3{
@@ -216,6 +217,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .vagas_corpo h4{
@@ -224,6 +226,7 @@ nav {
     font-size: 16px;
     position: relative;
     text-align: right;
+    font-weight: bold;
 }
 
 .contato_trabalhe{
@@ -271,9 +274,10 @@ nav {
 .contato_trabalhe input[type=button], input[type=submit], input[type=file]{
     background-color: #199ec8;
     border-style: none;
-    width: 100px;
-    height: 25px;
+    width: 115px;
+    height: 35px;
     border-radius: 5px;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
@@ -577,7 +581,10 @@ nav {
         justify-content: center;
         }
 
-  
+        .cabecalho_trabalhe h1 {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
     
         .corpo_footer{
             flex-wrap: wrap;
@@ -632,6 +639,9 @@ nav {
             position: relative;
             font-weight: bold;
             margin-bottom: 10px;
+        }
+        .position-fixed{
+            width: 100%;
         }
     }
 }

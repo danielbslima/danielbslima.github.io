@@ -151,7 +151,7 @@ nav {
     display: none;
 }
 
-.perguntas {
+.quem{
     width: 100%;
     height: fit-content;
     margin-top: 40px;
@@ -161,7 +161,7 @@ nav {
     justify-items: center;
 }
 
-.cabecalho_perguntas {
+.cabecalho_quem {
     background-image: url(../img/quebra_sessao.png);
     height: 50px;
     background-repeat: no-repeat;
@@ -173,31 +173,80 @@ nav {
     justify-content: center;
 }
 
-.cabecalho_perguntas #header_perguntas{
+.cabecalho_quem #header_quem {
     color: blanchedalmond;
     width:75%;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: relative;
-
+    vertical-align: middle;
 }
 
-.cabecalho_perguntas h1 {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+
+.quem_somos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+    vertical-align: middle;
+    
 }
 
-.perguntas_body{
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+.row {
+    display: flexbox;
+    justify-content: space-between;
 }
 
-.plat {
-    height: 30px;
-    width: 30px;
-    margin: 15px;
-    align-self: flex-end;
-}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 185px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+
+  .flip-card img{
+      width: 100%;
+      height: auto;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back {
+    background-color: #199ec8;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
 
 .footer {
     width: 100%;
@@ -412,6 +461,16 @@ nav {
         background-image: linear-gradient(to right, transparent, #CCC, transparent); 
     }
 
+    .row {
+        display: flexbox;
+        justify-content: center;
+    }
+
+    
+    .flip-card {
+        margin-top: 15px;
+    }
+
       .gps_loc{
         display:none;
     }
@@ -475,7 +534,7 @@ nav {
 
 
 
-    .cabecalho_perguntas {
+    .cabecalho_quem {
         background-image: url(../img/quebra_sessao.png);
         height: auto;
         background-repeat: no-repeat;
@@ -487,8 +546,19 @@ nav {
         justify-content: center;
         }
 
-  
+        .cabecalho_quem h1 {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
     
+        .intro{
+            margin-top: 30px;
+
+        }
+
+
+
+
         .corpo_footer{
             flex-wrap: wrap;
             justify-items: left;
@@ -534,6 +604,17 @@ nav {
             line-height: 30px;
 
         
+        }
+        .contato_trabalhe h5{
+            color:#199ec8;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            position: relative;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .position-fixed{
+            width: 100%;
         }
     }
 }

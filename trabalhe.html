@@ -50,7 +50,6 @@
 	<nav>
 		<div class="nav posicionamento_nav">
 			<div class="departamentos_items">
-				
 				<a href="#">Departamentos</a>
 			</div>
 			<div id="nav_items" class="nav_items">
@@ -71,16 +70,13 @@
 			</div>
 		</div>		
 	</nav>
-	
 	<section class="trabalhe">
 		<div class="cabecalho_trabalhe">
 			<h1 id="header_trabalhe">Trabalhe conosco</h1>
 		</div>		
-		
 		<div class="trabalhe_body container_grid">
 			<div class="enunciado">
 				<h1>Vagas disponíveis:</h1>
-
 			</div>
 			<div id="vagas_items" class="vagas_corpo">
 				<!-- `<div class="card_vaga">
@@ -91,39 +87,54 @@
 					<h4>${vaga.salarioVaga}</h4>
 				</div>` -->
 			</div>
-
 			<div class="contato_trabalhe">
-				<form>
+				<form name="submissao" onsubmit="return false">
 					<h5>Formulário de Submissão:</h5>
-					<label for="name"><B>Nome Completo:</B></label> <BR>
+					<label for="name"><B>Nome Completo:</B></label> 
+					<BR>
 					<input type="text" id="name" placeholder="Seu Nome" maxlength="15" required autocomplete>
 					<br><br>
 					<label for="lattes"><b>Currículo Lattes</b></label>
-					<input type="text" id="lattes" name="lattes" placeholder="Insira o link aqui..."> <BR><BR>
-						<label for="cidade"><B>Cidade:</B></label> <BR>
-							<select id="cidade" name="cidade">
-								<option value="Narnia">Narnia</option>
-								<option value="Tamriel">Tamriel</option>
-								<option value="Bambuluá">Bambuluá</option>
-							  </select> <BR><BR>
+					<input type="text" id="lattes" name="lattes" placeholder="Insira o link aqui...">
+					<BR><BR>
+					<label for="cidade"><B>Cidade:</B></label> 
+					<BR>
+					<select id="cidade" name="cidade">
+					<option value="Narnia">Narnia</option>
+					<option value="Tamriel">Tamriel</option>
+					<option value="Bambuluá">Bambuluá</option>
+					</select> 
+					<BR><BR>
 					<label for="vaga_subm"><b>Vaga Pretendida:</b></label>
 					<br>
-					<input type="radio" id="radio_vaga1" name="ADS - Fulstack"> ADS - Fullstack;<br>
-					<input type="radio" id="radio_vaga2" name="DJ - Música de espera"> DJ - Música de espera do SAC;<br>
-					<input type="radio" id="radio_vaga3" name="Auxiliar de carregamento"> Auxiliar de carregamento;<br><br>
-					
-					
-					<h1>Trabalhar conosco exige dedicação, por isso, junto ao seu currículo, sortearemos uma missão com um item a ser recuperado e apresentado no dia da admissão: </h1>
-					<input type="button" id="btnSearch" value="Boa sorte" onclick="GetValue();" /><BR><BR>
-					<p id="message" >Aqui aparecerá sua missão</p>
+					<input type="radio" id="radio_vaga1" name="ADS - Fulstack"> ADS - Fullstack;
 					<br>
+					<input type="radio" id="radio_vaga2" name="DJ - Música de espera"> DJ - Música de espera do SAC;
+					<br>
+					<input type="radio" id="radio_vaga3" name="Auxiliar de carregamento"> Auxiliar de carregamento;
+					<br><br>
+					<h1>Trabalhar conosco exige dedicação, por isso, junto ao seu currículo, sortearemos uma missão com um item a ser recuperado e apresentado no dia da admissão: </h1>
+					<input type="button" id="btnSearch" value="Boa sorte" onclick="GetValue();" />
+					<BR><BR>    
+					<p id="message" >Aqui aparecerá sua missão</p>
 					<input type="submit" id="btn-enviar" name="btn-enviar" value="Terminar" required>
-				</form>		
+				<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+					<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+						<div class="toast-header">
+							<img src="img/favicon-32x32.png" class="rounded me-2" alt="...">
+							<strong class="me-auto">GameMania</strong>
+							<small>Há poucos segundos...</small>
+							<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+						</div>
+    					<div class="toast-body">	
+      						Obrigado pela submissão.
+    					</div>
+  					</div>
 				</div>
+			</form>		
 		</div>
-	
-		
-	</section>
+	</div>
+</section>
 
 
 
