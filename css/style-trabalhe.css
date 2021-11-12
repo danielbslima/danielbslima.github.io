@@ -286,6 +286,11 @@ nav {
     align-self: flex-end;
 }
 
+.missao_ativa{
+    font-weight: bold;
+    color: #199ec8;
+}
+
 .plat {
     height: 30px;
     width: 30px;

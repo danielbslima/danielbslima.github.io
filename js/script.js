@@ -10,6 +10,15 @@ $( document ).ready(function(){
         }
 
     })
+  
+    $("#btnSearch").click(function() {
+        // $("#nav_items").addClass("nav_items_ativo")
+
+        ($("#message").addClass("missao_ativa"))
+
+    })
+
+
 })
 
 
